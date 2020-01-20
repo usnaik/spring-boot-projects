@@ -23,6 +23,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
         user.orElseThrow(() -> new UsernameNotFoundException("Not found: " + userName));
 
+        System.out.println(user);
         return user.map(MyUserDetails::new).get();
     }
 }
