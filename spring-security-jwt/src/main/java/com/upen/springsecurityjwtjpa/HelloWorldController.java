@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.upen.springsecurityjwt.util.JwtUtil;
+import com.upen.springsecurityjwtjpa.util.JwtUtil;
 import com.upen.springsecurityjwtjpa.models.AuthenticationRequest;
 import com.upen.springsecurityjwtjpa.models.AuthenticationResponse;
 
