@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa;
+package com.upen.springsecurityjwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -6,15 +6,14 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.upen.springsecurityjwtjpa.util.JwtUtil;
-import com.upen.springsecurityjwtjpa.models.AuthenticationRequest;
-import com.upen.springsecurityjwtjpa.models.AuthenticationResponse;
+import com.upen.springsecurityjwt.models.AuthenticationRequest;
+import com.upen.springsecurityjwt.models.AuthenticationResponse;
+import com.upen.springsecurityjwt.util.JwtUtil;
 
 @RestController
 public class HelloWorldController {
@@ -28,24 +27,8 @@ public class HelloWorldController {
 	@Autowired
 	private MyUserDetailsService userDetailsService;
 
-//	@RequestMapping({"/hello"})
-//	public String firstPage() { return "Hello World"; }
-
-    @GetMapping("/")
-    public String home() {
-        return ("<h1>Welcome</h1>");
-    }
-
-    @GetMapping("/user")
-    public String user() {
-        return ("<h1>Welcome User</h1>");
-    }
-
-    @GetMapping("/admin")
-    public String admin() {
-        return ("<h1>Welcome Admin</h1>");
-    }
-
+	@RequestMapping({"/hello"})
+	public String firstPage() { return "Hello World"; }
 	
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {

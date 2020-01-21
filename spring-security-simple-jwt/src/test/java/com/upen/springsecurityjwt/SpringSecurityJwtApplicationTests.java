@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa;
+package com.upen.springsecurityjwt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

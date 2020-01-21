@@ -1,2 +1,0 @@
-insert into springsecurity.user(id, active, password, roles, user_name) values(1,true,"user","ROLE_USER", "user");
-insert into springsecurity.user(id, active, password, roles, user_name) values(2,true,"admin","ROLE_ADMIN", "admin");
