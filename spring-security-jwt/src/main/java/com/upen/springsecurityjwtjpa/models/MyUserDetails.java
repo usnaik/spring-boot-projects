@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwt.models;
+package com.upen.springsecurityjwtjpa.models;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
