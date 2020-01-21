@@ -28,6 +28,9 @@ public class HelloWorldController {
 	@Autowired
 	private MyUserDetailsService userDetailsService;
 
+//	@RequestMapping({"/hello"})
+//	public String firstPage() { return "Hello World"; }
+
     @GetMapping("/")
     public String home() {
         return ("<h1>Welcome</h1>");
