@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa;
+package com.upen.springsecurityjwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.upen.springsecurityjwtjpa.filters.JwtRequestFilter;
+import com.upen.springsecurityjwt.filters.JwtRequestFilter;
 
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {

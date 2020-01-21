@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa;
+package com.upen.springsecurityjwt;
 
 import java.util.Optional;
 
@@ -9,8 +9,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.upen.springsecurityjwtjpa.models.MyUserDetails;
-import com.upen.springsecurityjwtjpa.models.User;
+import com.upen.springsecurityjwt.models.MyUserDetails;
+import com.upen.springsecurityjwt.models.User;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {

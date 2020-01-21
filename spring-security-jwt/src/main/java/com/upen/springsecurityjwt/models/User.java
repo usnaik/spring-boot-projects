@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa.models;
+package com.upen.springsecurityjwt.models;
 
 import javax.persistence.*;
 

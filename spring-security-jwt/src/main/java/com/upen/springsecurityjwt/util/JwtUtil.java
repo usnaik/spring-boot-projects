@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa.util;
+package com.upen.springsecurityjwt.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

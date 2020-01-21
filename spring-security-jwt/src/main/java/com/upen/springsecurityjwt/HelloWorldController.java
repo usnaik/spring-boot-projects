@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa;
+package com.upen.springsecurityjwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.upen.springsecurityjwtjpa.util.JwtUtil;
-import com.upen.springsecurityjwtjpa.models.AuthenticationRequest;
-import com.upen.springsecurityjwtjpa.models.AuthenticationResponse;
+import com.upen.springsecurityjwt.models.AuthenticationRequest;
+import com.upen.springsecurityjwt.models.AuthenticationResponse;
+import com.upen.springsecurityjwt.util.JwtUtil;
 
 @RestController
 public class HelloWorldController {

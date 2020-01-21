@@ -1,4 +1,4 @@
-package com.upen.springsecurityjwtjpa.filters;
+package com.upen.springsecurityjwt.filters;
 
 import java.io.IOException;
 
@@ -15,8 +15,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.upen.springsecurityjwtjpa.MyUserDetailsService;
-import com.upen.springsecurityjwtjpa.util.JwtUtil;
+import com.upen.springsecurityjwt.MyUserDetailsService;
+import com.upen.springsecurityjwt.util.JwtUtil;
 
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
