@@ -1,8 +1,8 @@
-package com.upen.springsecurityjwt;
+package com.upen.springsecurityjwtjpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.upen.springsecurityjwt.models.User;
+import com.upen.springsecurityjwtjpa.models.User;
 
 import java.util.Optional;
 
