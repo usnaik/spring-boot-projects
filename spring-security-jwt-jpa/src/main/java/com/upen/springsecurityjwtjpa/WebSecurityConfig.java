@@ -46,10 +46,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers("/authenticate").permitAll()
 	        .antMatchers("/admin").hasRole("ADMIN")
 	        .antMatchers("/user").hasAnyRole("ADMIN", "USER")
+//	        .anyRequest().authenticated()
 	        .antMatchers("/").permitAll()
 			.and().exceptionHandling()
-			.and().sessionManagement()
-			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+			.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
 		
 		httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
