@@ -1,5 +1,7 @@
 package com.upen.springsecurityjpa;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -8,8 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.upen.springsecurityjpa.models.MyUserDetails;
 import com.upen.springsecurityjpa.models.User;
-
-import java.util.Optional;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -23,7 +23,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
         user.orElseThrow(() -> new UsernameNotFoundException("Not found: " + userName));
 
-        System.out.println(user);
         return user.map(MyUserDetails::new).get();
     }
 }
