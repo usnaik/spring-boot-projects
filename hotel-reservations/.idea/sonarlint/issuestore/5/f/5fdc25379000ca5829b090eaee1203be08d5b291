@@ -1,0 +1,17 @@
+
+J
+java:S3740#"/Provide the parametrized type for this generic.(Å³¨Žýÿÿÿÿ
+G
+java:S1612G",Replace this lambda with a method reference.(‘ž€²ÿÿÿÿÿ
+>
+java:S16048"(Make this anonymous inner class a lambda(Ú˜€á
+>
+java:S1604H"(Make this anonymous inner class a lambda(¿Ã¤®
+O
+java:S4973;"9Use the "equals" method if value comparison was intended.(ë–öì
+T
+java:S4973K"9Use the "equals" method if value comparison was intended.(ŒÁ¦Âúÿÿÿÿ
+O
+java:S28645"4Iterate over the "entrySet" instead of the "keySet".(“ö ˆûÿÿÿÿ
+G
+java:S1602G",Remove useless curly braces around statement(‘ž€²ÿÿÿÿÿ
