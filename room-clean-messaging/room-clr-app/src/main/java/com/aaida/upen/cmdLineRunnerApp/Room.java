@@ -1,4 +1,4 @@
-package com.frankmoley.boot.clr.roomclrapp;
+package com.aaida.upen.cmdLineRunnerApp;
 
 public class Room {
     private long id;

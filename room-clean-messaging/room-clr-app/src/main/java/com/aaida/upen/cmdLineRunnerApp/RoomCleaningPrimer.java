@@ -1,4 +1,4 @@
-package com.frankmoley.boot.clr.roomclrapp;
+package com.aaida.upen.cmdLineRunnerApp;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -44,8 +44,8 @@ public class RoomCleaningPrimer implements CommandLineRunner{
     @Override
     public void run(String... strings) throws Exception {
 
-        com.frankmoley.boot.clr.roomclrapp.Room[] roomArray = this.restTemplate.getForObject(roomsApiService, com.frankmoley.boot.clr.roomclrapp.Room[].class);
-        List<com.frankmoley.boot.clr.roomclrapp.Room> rooms = Arrays.asList(roomArray);
+        Room[] roomArray = this.restTemplate.getForObject(roomsApiService, Room[].class);
+        List<Room> rooms = Arrays.asList(roomArray);
         rooms.forEach(room->{
             LOGGER.info("Sending Message");
             try {
