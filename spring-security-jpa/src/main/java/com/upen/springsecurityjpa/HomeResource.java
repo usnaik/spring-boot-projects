@@ -8,17 +8,17 @@ public class HomeResource {
 
     @GetMapping("/")
     public String home() {
-        return ("<h1>Welcome</h1>");
+        return ("<h1>Welcome | Home Page</h1>");
     }
 
     @GetMapping("/user")
     public String user() {
-        return ("<h1>Welcome User</h1>");
+        return ("<h1>Welcome | All Users</h1>");
     }
 
     @GetMapping("/admin")
     public String admin() {
-        return ("<h1>Welcome Admin</h1>");
+        return ("<h1>Welcome | Admins Only</h1>");
     }
 }
 
