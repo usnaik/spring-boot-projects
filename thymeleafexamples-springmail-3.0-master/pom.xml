@@ -108,7 +108,7 @@
         <maven.compile.target>1.6</maven.compile.target>
         <project.build.sourceEncoding>US-ASCII</project.build.sourceEncoding>
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
-        <springframework.version>5.1.0.RELEASE</springframework.version>
+        <springframework.version>5.3.18</springframework.version>
     </properties>
 
     <build>
